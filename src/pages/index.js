@@ -4,13 +4,54 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
+import { Card, Button, CardGroup } from 'react-bootstrap'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <CardGroup>
+      <Card style={{ width: '10rem' }}>
+        <Card.Img variant="top" src="https://avatars3.githubusercontent.com/u/39351424?s=400&u=fd9ec7804f82f2f2a041cc3edb836200fccab937&v=4" />
+        <Card.Body>
+          <Card.Title>Saniok017</Card.Title>
+          <Card.Text>
+            Aliaksandr Naumenka
+          </Card.Text>
+          <Card.Link href="https://github.com/saniok017"><Button variant="primary">gitHub</Button></Card.Link>
+        </Card.Body>
+      </Card>;
+      <Card style={{ width: '10rem' }}>
+        <Card.Img variant="top" src="https://avatars0.githubusercontent.com/u/21264092?s=400&v=4" />
+        <Card.Body>
+          <Card.Title>sergey496</Card.Title>
+          <Card.Text>
+            Siarhei Zylevich
+          </Card.Text>
+          <Card.Link href="https://github.com/sergey496"><Button variant="primary">gitHub</Button></Card.Link>
+        </Card.Body>
+      </Card>;
+      <Card style={{ width: '10rem' }}>
+        <Card.Img variant="top" src="https://avatars3.githubusercontent.com/u/26420726?s=400&v=4" />
+        <Card.Body>
+          <Card.Title>ton9q</Card.Title>
+          <Card.Text>
+            Anton Kuchma
+          </Card.Text>
+          <Card.Link href="https://github.com/ton9q"><Button variant="primary">gitHub</Button></Card.Link>
+        </Card.Body>
+      </Card>;
+      <Card style={{ width: '10rem' }}>
+        <Card.Img variant="top" src="https://avatars0.githubusercontent.com/u/43179292?s=400&v=4" />
+        <Card.Body>
+          <Card.Title>alexeykuril0</Card.Title>
+          <Card.Text>
+            Alexey Kurilo
+          </Card.Text>
+          <Card.Link href="https://github.com/alexeykuril0"><Button variant="primary">gitHub</Button></Card.Link>
+        </Card.Body>
+      </Card>;
+    </CardGroup>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
